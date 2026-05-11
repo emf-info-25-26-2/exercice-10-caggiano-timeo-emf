@@ -114,7 +114,7 @@ public class Controller {
     }
 
     /**
-     * Setter de la référence au service GestionVins  de l'application.
+     * Setter de la référence au service GestionVins de l'application.
      *
      * @param service la référence au service GestionVins de l'application
      */

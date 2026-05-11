@@ -12,39 +12,46 @@ public class Bouteille {
     /**
      * Le nom de cette bouteille de vin non modifiable.
      */
-    // VOTRE CODE ICI...
+    private String nom;
 
     /**
      * L'année de cette bouteille de vin non modifiable.
      */
-    // VOTRE CODE ICI...
-    
+    private int annee;
+
     /**
      * Le prix de cette bouteille de vin non modifiable.
      */
-    // VOTRE CODE ICI...
+    private double prix;
 
     /**
-     * Le constructeur de la classe Bouteille. Toujours initialiser TOUS les attributs !
+     * Le constructeur de la classe Bouteille. Toujours initialiser TOUS les
+     * attributs !
      *
-     * @param nom le nom de ce vin
+     * @param nom   le nom de ce vin
      * @param annee l'année de ce vin
-     * @param prix le prix de ce vin
+     * @param prix  le prix de ce vin
      */
-    public Bouteille( String nom, int annee, double prix ) {
-        // VOTRE CODE ICI...
+    public Bouteille(String nom, int annee, double prix) {
+        this.nom = nom;
+        this.annee = annee;
+        this.prix = prix;
     }
 
     /**
-     * Surcharge de la méthode Java toString() afin présenter clairement et lisiblement cette bouteille à l'utilisateur.
-     * Le format à produire est le nom de la bouteille, suivi du texte " de ", suivi de son année, suivi du texte " / ",
-     * suivi du prix de la bouteille avec toujours deux chiffres après la virgule, suivi du texte " Frs".
+     * Surcharge de la méthode Java toString() afin présenter clairement et
+     * lisiblement cette bouteille à l'utilisateur.
+     * Le format à produire est le nom de la bouteille, suivi du texte " de ", suivi
+     * de son année, suivi du texte " / ",
+     * suivi du prix de la bouteille avec toujours deux chiffres après la virgule,
+     * suivi du texte " Frs".
      *
-     * @return une chaîne de caractères contenant les informations formatées comme précité
+     * @return une chaîne de caractères contenant les informations formatées comme
+     *         précité
      */
     @Override
     public String toString() {
-        // VOTRE CODE ICI...
+        return getNom() + " de " + getAnnee() + " / " + String.format("%.2f", getPrix()) + " Frs ";
     }
 
     /**
@@ -53,7 +60,7 @@ public class Bouteille {
      * @return le nom de la bouteille de vin
      */
     public String getNom() {
-        // VOTRE CODE ICI...
+        return nom;
     }
 
     /**
@@ -62,7 +69,7 @@ public class Bouteille {
      * @return l'année de la bouteille de vin
      */
     public int getAnnee() {
-        // VOTRE CODE ICI...
+        return annee;
     }
 
     /**
@@ -71,7 +78,7 @@ public class Bouteille {
      * @return le prix de la bouteille de vin
      */
     public double getPrix() {
-        // VOTRE CODE ICI...
+        return prix;
     }
 
 }

@@ -254,7 +254,6 @@ namespace view {
 Voici le diagramme de séquence de la méthode de la méthode `main()` de la classe `Application` du package `app` :
 ```mermaid
 sequenceDiagram
-    participant app.Application.main
     create participant refCtrl
     app.Application.main()->>refCtrl: new Controller()
     create participant refServiceGestionVins

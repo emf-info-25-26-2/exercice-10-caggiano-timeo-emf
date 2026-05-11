@@ -39,7 +39,11 @@ public class Armoire {
      *         bouteille dans cette armoire
      */
     public boolean armoireEstPleine() {
-        // VOTRE CODE ICI...
+        for (int i = 0; i < contenu.length; i++) {
+            if () {
+                
+            }
+        }
     }
 
     /**
@@ -53,7 +57,9 @@ public class Armoire {
      *         encore une place dans cette armoire
      */
     public boolean ajouterBouteille(Bouteille bouteille) {
-        // VOTRE CODE ICI...
+        for (int i = 0; i < contenu.length; i++) {
+
+        }
     }
 
     /**
@@ -75,7 +81,7 @@ public class Armoire {
      * @return la valeur totale des bouteilles contenues dans cette armoire
      */
     public double valeurTotaleStock() {
-        // VOTRE CODE ICI...
+
     }
 
     /**
@@ -85,7 +91,7 @@ public class Armoire {
      * @return liste de toutes les bouteilles de cette armoire sans "trous"
      */
     public Bouteille[] getBouteilles() {
-        // VOTRE CODE ICI...
+        return;
     }
 
     /**
@@ -99,7 +105,7 @@ public class Armoire {
      * @return un objet Statistique transportant les informations précitées
      */
     public Statistique calculerStatistiques() {
-        // VOTRE CODE ICI...
+
     }
 
     /**
@@ -108,7 +114,7 @@ public class Armoire {
      * @return nom de cette armoire à bouteilles
      */
     public String getNom() {
-        // VOTRE CODE ICI...
+        return nom;
     }
 
 }

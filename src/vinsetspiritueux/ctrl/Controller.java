@@ -1,5 +1,9 @@
 package vinsetspiritueux.ctrl;
 
+import vinsetspiritueux.service.ServiceGestionVins;
+import vinsetspiritueux.view.View;
+import vinsetspiritueux.models.Local;
+
 /**
  * Classe représentant le contrôleur de l'application MVC "VinsEtSpiritueux" du
  * module D400.
@@ -13,23 +17,25 @@ public class Controller {
     /**
      * Référence au worker principal de l'application.
      */
-    // VOTRE CODE ICI...
+    private ServiceGestionVins refService;
 
     /**
      * Référence à l'ihm principale de l'application.
      */
-    // VOTRE CODE ICI...
+    private View refView;
 
     /**
      * Attribut qui va contenir les locaux de l'entreprise.
      */
-    // VOTRE CODE ICI...
+    private Local[] locaux;
 
     /**
      * Le constructeur de la classe Ctrl. Au démarrage, la liste de locaux est vide.
      */
     public Controller() {
-        // VOTRE CODE ICI...
+        this.refService = refService;
+        this.refView = refView;
+        this.locaux = locaux;
     }
 
     /**
@@ -38,7 +44,7 @@ public class Controller {
      * de la démarrer.
      */
     public void start() {
-        // VOTRE CODE ICI...
+        refView.viewStart();
     }
 
     /**
@@ -47,6 +53,7 @@ public class Controller {
      * de sauvegarder l'état de l'application, mais ici il n'y a rien à faire..
      */
     public void viewExiting() {
+
     }
 
     /**
@@ -110,7 +117,7 @@ public class Controller {
      * @return la référence au worker de l'application
      */
     public ServiceGestionVins getRefServiceGestionVins() {
-        // VOTRE CODE ICI...
+        return refService;
     }
 
     /**
@@ -119,7 +126,7 @@ public class Controller {
      * @param service la référence au service GestionVins de l'application
      */
     public void setRefServiceGestionVins(ServiceGestionVins service) {
-        // VOTRE CODE ICI...
+        this.refService = refService;
     }
 
     /**
@@ -127,8 +134,8 @@ public class Controller {
      *
      * @return la référence à la vue de l'application
      */
-    public View getReView() {
-        // VOTRE CODE ICI...
+    public View getRefView() {
+        return refView;
     }
 
     /**
@@ -137,7 +144,7 @@ public class Controller {
      * @param view la référence à la vue de l'application
      */
     public void setRefView(View view) {
-        // VOTRE CODE ICI...
+        this.refView = refView;
     }
 
 }
